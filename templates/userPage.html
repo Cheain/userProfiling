@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block body %}
+    <img src="{{ icon }}">
+    <p>{{ name }}(用户{{ userID }})</p>
+    <p>简介：{{ about }}</p>
+
+    <p>标签：
+    {% for t in tag %}
+        <a href="{% url 'propertyPage' t %}">{{ t }}</a>
+    {% endfor %}</p>
+
+
+
+    <p>用户属性展示：</p>
+    <img src="/static/userPro/img/u16.png">
+
+
+{% endblock %}

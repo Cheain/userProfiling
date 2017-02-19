@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block body %}
+    <p>热门属性：# {{ property }} #</p>
+    <p>关键字：
+    {% for k in keyWord %}
+        {{ k }}
+    {% endfor %}</p>
+
+
+    <p>推荐微博：</p>
+
+
+
+{% endblock %}

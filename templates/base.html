@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}用户画像{% endblock %}</title>
+</head>
+<body>
+    <img src="/static/userPro/img/u1.png">
+    <p>基于多模态的动态用户属性挖掘系统</p>
+    <a href="{% url 'homePage' %}">首页</a>
+    <a href="{% url 'search' %}">搜索</a>
+
+    <br>
+
+    {% block body %}
+        <p>用户画像构建</p>
+    {% endblock %}
+</body>
+</html>

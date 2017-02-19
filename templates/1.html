@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% load staticfiles %}
+{#<img src="{% static "bg.jpg" %}">#}
+{#<img src="/static/bg.jpg">#}
+{#<img src="/media/image/bg.jpg">#}
+
+<form method='POST'>
+    {% csrf_token %}
+    {{ form }}
+    <input type="text" name="a">
+    <input type="text" name="b">
+<input type="submit" value="提交">
+</form>
+
+{{ a }}
+{{ b }}
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block body %}
+    {% if qTag %}
+        <img src="{{ icon }}">
+        <a href="{% url 'userPage' q %}">{{ name }}(搜索{{ q }})</a>
+
+        <p>标签：</p>
+            {% for t in tag %}
+                <a href="{% url 'propertyPage' t %}">{{ t }}</a>/
+            {% endfor %}
+    {% else %}
+        <p>{{ msg }}</p>
+    {% endif %}
+    
+
+{% endblock %}
