@@ -3,12 +3,20 @@
 {{ title }}
 {% endblock %}
 {% block body %}
-    <form action="{% url 'searchResult' %}" method="get" >
+    <div id="u93" class="">
+        <div id="u93_div" class=""></div>
+        <div id="u94" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+    </div>
+    <div id="u95" class="">
+        <form action="{% url 'searchResult' %}" method="get" >
             <label>
-                <input type="text" name="q">
+                <input id="u95_input" type="text" value="  请输入用户名/ID">
             </label>
-            <input type="submit" value="搜索">
-    </form>
+            <input id="u95_submit" type="submit" value="提交">
+        </form>
+    </div>
 
 
 {#    <form method='post'>#}
