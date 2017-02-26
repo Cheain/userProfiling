@@ -3,15 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}用户画像{% endblock %}</title>
+    <link href="/static/userPro/css/base.css" type="text/css" rel="stylesheet"/>
+    <script src="/static/userPro/js/echarts.min.js"></script>
+    <script src="/static/userPro/js/jquery.min.js"></script>
 </head>
 <body>
-    <img src="/static/userPro/img/u1.png">
-    <p>基于多模态的动态用户属性挖掘系统</p>
-    <a href="{% url 'homePage' %}">首页</a>
-    <a href="{% url 'search' %}">搜索</a>
+     <div id="u1" class="">
+          <img id="u1_img" class="img " src="/static/userPro/img/u1.png">
+     </div>
 
+     <div id="u3" class="ax_default _三级标题">
+          <div id="u3_div" class=""></div>
+          <div id="u4" class="text">
+            <p><span>基于多模态的动态用户属性挖掘系统</span></p>
+          </div>
+     </div>
+     <div id="u7" class="">
+          <div id="u8" class="text">
+            <a href="{% url 'homePage' %}">首页</a>
+          </div>
+     </div>
+     <div id="u9" class="">
+          <div id="u10" class="text">
+            <a href="{% url 'search' %}">搜索</a>
+          </div>
+     </div>
     <br>
-
     {% block body %}
         <p>用户画像构建</p>
     {% endblock %}
